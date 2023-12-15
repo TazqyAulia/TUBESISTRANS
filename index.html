@@ -525,7 +525,7 @@
                         <td colspan="2">' + (feature.properties['Nama Jalan'] !== null ? autolinker.link(feature.properties['Nama Jalan'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Gambar'] !== null ? '<img src="images/' + String(feature.properties['Gambar']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Gambar'] !== null ? '<img src="images/' + String(feature.properties['Gambar']).replace(/[\\\/:]/g, '_').trim() + '" '+ 'class=popupImage' +'>' : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
